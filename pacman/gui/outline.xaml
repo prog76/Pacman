@@ -1,0 +1,38 @@
+﻿<UserControl CacheMode="BitmapCache" x:Class="pacman.Outline" x:Name="root"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ 	 xmlns:system="clr-namespace:System;assembly=mscorlib"
+    mc:Ignorable="d"
+	 xmlns:lcl="clr-namespace:pacman"
+	d:DesignHeight="50" d:DesignWidth="100" Foreground="White" BorderBrush="Black">
+	<Grid>
+		<ItemsControl x:Name="border" CacheMode="BitmapCache" ItemsSource="{Binding ElementName=root, Path=moves}">
+			<ItemsControl.Effect>
+				<BlurEffect Radius="5"/>
+			</ItemsControl.Effect>
+			<ItemsControl.ItemsPanel>
+				<ItemsPanelTemplate>
+					<Grid/>
+				</ItemsPanelTemplate>
+			</ItemsControl.ItemsPanel>
+			<ItemsControl.ItemTemplate>
+				<DataTemplate>
+					<TextBlock Text="{Binding ElementName=tb,Path=Text}" FontSize="{Binding ElementName=tb,Path=FontSize}" Foreground="{Binding ElementName=root, Path=BorderBrush}" VerticalAlignment="Center" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" FontFamily="Lucida Sans Unicode">
+						<TextBlock.RenderTransform>
+							<TransformGroup>
+								<TranslateTransform X="{Binding Path=x}" Y="{Binding Path=y}" />
+							</TransformGroup>
+						</TextBlock.RenderTransform>		
+					</TextBlock>
+				</DataTemplate>
+			</ItemsControl.ItemTemplate>
+		</ItemsControl> 
+		<TextBlock CacheMode="BitmapCache"  x:Name="tb" Text="1234" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Lucida Sans Unicode">
+			<TextBlock.Effect>
+			<!--	<lcl:OutLineShader/> -->
+			</TextBlock.Effect>
+		</TextBlock>
+	</Grid>
+</UserControl>

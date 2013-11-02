@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="pacman.pageScores"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+ 	 xmlns:lcl="clr-namespace:pacman"
+    d:DesignHeight="300" d:DesignWidth="400" x:Name="Scores" >
+	<Grid Background="Black" ShowGridLines="True">
+	<StackPanel>
+		<TextBlock FontFamily="../CRACKMAN.TTF#CRACKMAN" FontSize="40" Text="SCORES" HorizontalAlignment="Center" Foreground="White"/>
+			<lcl:scoreLine number="#" name="NAME" score="SCORE" mode="Header"/>
+			<ItemsControl x:Name="scoreSet" ItemsSource="{Binding scores}">
+			<ItemsControl.ItemsPanel>
+				<ItemsPanelTemplate>
+					<StackPanel/>
+				</ItemsPanelTemplate>
+			</ItemsControl.ItemsPanel>
+			<ItemsControl.ItemTemplate>
+				<DataTemplate>
+						<lcl:scoreLine name="{Binding name}" number="{Binding number}" score="{Binding score}" mode="{Binding mode}"/>
+				</DataTemplate>
+			</ItemsControl.ItemTemplate>
+		</ItemsControl>
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="0.5*"/>
+			</Grid.ColumnDefinitions>
+			<lcl:soundMenuBut x:Name="menuClose" Margin="5" text="Back" Height="35"/>
+		</Grid>				
+	</StackPanel>
+	</Grid>
+</UserControl>

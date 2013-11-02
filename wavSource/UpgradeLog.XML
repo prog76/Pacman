@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WAVMss">
+</Property><Property Name="Solution File" Value="C:\Users\adobshikov\Documents\Visual Studio 2010\Projects\pacman\wavSource\WAVMss.sln">
+</Property><Property Name="Date" Value="9 апреля 2011 г.">
+</Property><Property Name="Time" Value="20:57">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="WAVMss.sln" Description="File successfully backed up as C:\Users\adobshikov\Documents\Visual Studio 2010\Projects\pacman\wavSource\Backup\WAVMss.sln">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="WAVMss.csproj" Description="Project file successfully backed up as C:\Users\adobshikov\Documents\Visual Studio 2010\Projects\pacman\wavSource\Backup\WAVMss.csproj">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="WAVMss.csproj.user" Description="Project user file successfully backed up as C:\Users\adobshikov\Documents\Visual Studio 2010\Projects\pacman\wavSource\Backup\WAVMss.csproj.user">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="WaveFormatEx.cs" Description="File successfully backed up as C:\Users\adobshikov\Documents\Visual Studio 2010\Projects\pacman\wavSource\Backup\WaveFormatEx.cs">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="RiffParser.cs" Description="File successfully backed up as C:\Users\adobshikov\Documents\Visual Studio 2010\Projects\pacman\wavSource\Backup\RiffParser.cs">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="WaveMediaStreamSource.cs" Description="File successfully backed up as C:\Users\adobshikov\Documents\Visual Studio 2010\Projects\pacman\wavSource\Backup\WaveMediaStreamSource.cs">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\adobshikov\Documents\Visual Studio 2010\Projects\pacman\wavSource\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="WavParser.cs" Description="File successfully backed up as C:\Users\adobshikov\Documents\Visual Studio 2010\Projects\pacman\wavSource\Backup\WavParser.cs">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="WAVMss.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WAVMss" Source="WAVMss.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="WAVMss.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="WAVMss.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WAVMss" Source="WAVMss.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

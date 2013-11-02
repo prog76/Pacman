@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="pacman.testControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	 xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ 	 xmlns:gauge="clr-namespace:CircularGauge;assembly=CircularGauge"
+	 xmlns:tool="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Toolkit"
+    mc:Ignorable="d"
+				 xmlns:lcl="clr-namespace:pacman"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="99*" />
+			<ColumnDefinition Width="301*" />
+		</Grid.ColumnDefinitions>
+		<lcl:Outline BorderBrush="#FFE32F2F" Foreground="green" outLineSize="0.04" text="12345" kH="1.5" kW="1" Margin="83,128,230,130" Grid.ColumnSpan="2" />
+		<lcl:StackSeparator Height="19" HorizontalAlignment="Left" Margin="56,216,0,0" x:Name="stackSeparator1" VerticalAlignment="Top" Width="239" Grid.ColumnSpan="2" />
+		<lcl:glowFingerButton Margin="39,31,122,178" Grid.Column="1" color="#0032CE32" fingerNo="3" isEnter="True" isGlow="True" />
+		<lcl:FingerButton Margin="149,110,12,99" Grid.Column="1" color="#0032CE32" fingerNo="3" isEnter="False" />
+		<lcl:MenuButton text="menu1"/>
+		<Canvas Margin="1,0,161,208" Grid.Column="1">
+			<!--<lcl:TPillGame utsk="1" Width="52" Height="45" center="0,0" isBig="False" />-->
+			<lcl:TPill Background="White" ellipse="2" text="3" borderColor="White" foreColor="Red " center="0,70" Height="64" Width="64" Canvas.Top="57" />
+			<!--<lcl:TPillErr utsk="2" center="70,0" freq="40"/>-->
+		</Canvas>
+		
+	</Grid>
+	
+</UserControl>

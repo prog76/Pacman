@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A6B3166E-55A7-4E75-BBF7-BD32762EC07B}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeniusPacman.Silverlight.Core</RootNamespace>
+    <AssemblyName>GeniusPacman.Silverlight.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>false</ThrowErrorsInValidation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GeniusPacman.Core\Interfaces\ILabyrinthProvider.cs">
+      <Link>Interfaces\ILabyrinthProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Interfaces\IPacmanTimer.cs">
+      <Link>Interfaces\IPacmanTimer.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\Constants.cs">
+      <Link>Model\Constants.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\Direction.cs">
+      <Link>Model\Direction.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\Game.cs">
+      <Link>Model\Game.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\GhostState.cs">
+      <Link>Model\GhostState.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\Labyrinth.cs">
+      <Link>Model\Labyrinth.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\Notifiable.cs">
+      <Link>Model\Notifiable.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\Sprites\Bonus.cs">
+      <Link>Model\Sprites\Bonus.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\Sprites\FlyingScore.cs">
+      <Link>Model\Sprites\FlyingScore.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\Sprites\Ghost.cs">
+      <Link>Model\Sprites\Ghost.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\Sprites\Pacman.cs">
+      <Link>Model\Sprites\Pacman.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\Sprites\Sprite.cs">
+      <Link>Model\Sprites\Sprite.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\Strategies\EyeStrategy.cs">
+      <Link>Model\Strategies\EyeStrategy.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\Strategies\FleeStrategy.cs">
+      <Link>Model\Strategies\FleeStrategy.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\Strategies\HouseStrategy.cs">
+      <Link>Model\Strategies\HouseStrategy.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\Strategies\HuntStrategy.cs">
+      <Link>Model\Strategies\HuntStrategy.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\Strategies\RandomStrategy.cs">
+      <Link>Model\Strategies\RandomStrategy.cs</Link>
+    </Compile>
+    <Compile Include="..\GeniusPacman.Core\Model\Strategies\Strategy.cs">
+      <Link>Model\Strategies\Strategy.cs</Link>
+    </Compile>
+    <Compile Include="FastRandom.cs" />
+    <Compile Include="Lang.cs" />
+    <Compile Include="Model\IAudio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="saveConfig.cs" />
+    <Compile Include="scores.cs" />
+    <Compile Include="SortedCollection.cs" />
+    <Compile Include="SortedDictionary.cs" />
+    <Compile Include="SortedObservableCollection.cs" />
+    <Compile Include="taskBox.cs" />
+    <Compile Include="taskGenerator.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

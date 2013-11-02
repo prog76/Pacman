@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="keyGenerator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="80" d:DesignWidth="400">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+		  <RowDefinition/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="348*" />
+			<ColumnDefinition Width="52*" />
+		</Grid.ColumnDefinitions>
+		<TextBox x:Name="code"/>
+		<TextBox x:Name="pass" Grid.Row="2"/>
+		<Button x:Name="getPass" Grid.Column="2" Click="getPass_Click" />
+		<Button x:Name="writePass" Grid.Column="2" Grid.Row="2" Click="writePass_Click" />
+	</Grid>
+</UserControl>

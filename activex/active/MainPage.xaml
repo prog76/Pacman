@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="active.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="460" d:DesignWidth="520">
+    <UserControl.Resources>
+        <ResourceDictionary Source="Resources/Resources.xaml" />
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="Beige">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Button x:Name="btnClose" Content="X" Height="20" Click="btnClose_Click" />
+        </StackPanel>
+        <Border BorderBrush="AliceBlue" BorderThickness="1">
+            <StackPanel x:Name="sp" Orientation="Vertical" HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0,10,0,0" FontSize="15" FontWeight="Bold" Foreground="BlueViolet"
+                               Text="Enhanced local resource access ability in Silverlight 4" />
+                </StackPanel>
+                
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                    <Rectangle Style="{StaticResource DividerStyle}" />
+                    <Button x:Name="btnCopyToIso" Width="185" Content="Copy File to Isolation storage" Click="btnCopyToIso_Click" />
+                    <Rectangle Style="{StaticResource DividerStyle}" />
+                    <Button x:Name="btnReadIsolation" Width="185" Content="Load File from Isolation storage" Click="btnReadIsolation_Click"/>
+                </StackPanel>
+                <StackPanel>
+                    <Rectangle Style="{StaticResource DividerStyle}" />
+                    <ListBox x:Name="lbIsoFiles" Height="60" />
+                </StackPanel>
+
+                <Rectangle Style="{StaticResource DividerStyle}" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button x:Name="btnCreate" Content="Create Txt File" Click="btnCreate_Click"  Width="120"  />
+                    <Rectangle Style="{StaticResource DividerStyle}" />
+                    <Button x:Name="btnReadTxt" Content="Read Txt File" Click="btnReadTxt_Click"  Width="120"  />
+                </StackPanel>
+
+                <Rectangle Style="{StaticResource DividerStyle}" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button x:Name="btnWriteReg" Content="Write HKCU" Click="btnWriteReg_Click" Width="120"  />
+                    <Rectangle Style="{StaticResource DividerStyle}" />
+                    <Button x:Name="btnReadReg" Content="Read HKLM" Click="btnReadReg_Click" Width="120"  />
+                </StackPanel>
+
+                <Rectangle Style="{StaticResource DividerStyle}" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button x:Name="btnRunExe" Content="Run other app" Click="btnRunExe_Click"  Width="120"  />
+                </StackPanel>
+                
+                <Rectangle Style="{StaticResource DividerStyle}" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBox x:Name="txtPhonateSource" Height="23" Width="400" Text="I'm a Silverlight OOB application and I can phonate:)" />
+                    
+                    <Button x:Name="btnPhonate" Margin="2,0,0,0" Content="Phonate" Click="btnPhonate_Click"  Width="60"  />
+                </StackPanel>
+
+                <Rectangle Style="{StaticResource DividerStyle}" />
+                <TextBlock Text="Information box" Foreground="BlueViolet" Margin="4,0,0,1" />
+                <RichTextBox x:Name="rtb" Height="140" VerticalScrollBarVisibility="Auto" FontStyle="Italic" 
+                         UseLayoutRounding="True" Foreground="Blue" IsReadOnly="True" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

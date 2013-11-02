@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="pacman.FingerKeyboard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	 xmlns:lcl="clr-namespace:pacman"
+    mc:Ignorable="d"
+    d:DesignHeight="100" d:DesignWidth="400">
+
+	<Grid x:Name="fingers" Grid.Row="1">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<lcl:glowFingerButton fingerNo="4" isEnter="False" Grid.Column="0" color="Blue" />
+		<lcl:glowFingerButton fingerNo="3" isEnter="False" Grid.Column="1" color="#FF00C5FF" />
+		<lcl:glowFingerButton fingerNo="2" isEnter="False" Grid.Column="2" color="#FF00FFC5"/>
+		<lcl:glowFingerButton fingerNo="1" isEnter="False" Grid.Column="3" color="Lime" />
+		<lcl:glowFingerButton fingerNo="1" isEnter="False" Grid.Column="4"/>
+		<lcl:glowFingerButton fingerNo="6" isEnter="False" Grid.Column="5" color="#FFC3FF00" />
+		<lcl:glowFingerButton fingerNo="6" isEnter="False" Grid.Column="6"/>
+		<lcl:glowFingerButton fingerNo="7" isEnter="False" Grid.Column="7" color="Yellow" />
+		<lcl:glowFingerButton fingerNo="8" isEnter="False" Grid.Column="8" color="#FFFF9C00" />
+		<lcl:glowFingerButton fingerNo="9" isEnter="False" Grid.Column="9" color="Red" />
+		<lcl:glowFingerButton fingerNo="9" isEnter="False" Grid.Column="10" />
+		<lcl:glowFingerButton fingerNo="9" isEnter="true" Grid.Column="10" Grid.ColumnSpan="2"  Grid.RowSpan="2"/>
+		<lcl:glowFingerButton fingerNo="0" isEnter="false" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="8" color="Magenta" />
+	</Grid>
+</UserControl>

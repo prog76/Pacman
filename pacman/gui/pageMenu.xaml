@@ -1,0 +1,150 @@
+﻿<UserControl x:Class="pacman.pageMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+	 xmlns:lcl="clr-namespace:pacman"
+    d:DesignHeight="500" d:DesignWidth="400" Background="Black" x:Name="Menu" GotFocus="Menu_GotFocus">
+	<Grid x:Name="LayoutRoot">
+		<Grid.Resources>
+			<Storyboard x:Key="sb1">
+				<DoubleAnimationUsingKeyFrames Duration="0:0:5" Storyboard.TargetName="ghost1" Storyboard.TargetProperty="(Canvas.Left)">
+					<LinearDoubleKeyFrame KeyTime="0:0:1" Value="180"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:2" Value="180"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:3" Value="46"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:4" Value="46"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:5" Value="100"/>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames Duration="0:0:5" Storyboard.TargetName="ghost1" Storyboard.TargetProperty="(Canvas.Top)">
+					<LinearDoubleKeyFrame KeyTime="0:0:1" Value="{Binding ElementName=Menu, Path=GTop}"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:2" Value="{Binding ElementName=Menu, Path=GBottom}"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:3" Value="{Binding ElementName=Menu, Path=GBottom}"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:4" Value="{Binding ElementName=Menu, Path=GTop}"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:5" Value="{Binding ElementName=Menu, Path=GTop}"/>
+				</DoubleAnimationUsingKeyFrames>
+				<!-- ghost 2-->
+				<DoubleAnimationUsingKeyFrames Duration="0:0:5" 
+                                               BeginTime="0:0:0.4"
+                                               Storyboard.TargetName="ghost2" 
+                                               Storyboard.TargetProperty="(Canvas.Left)" SpeedRatio="{Binding ElementName=Menu, Path=ghost2Speed}">
+					<LinearDoubleKeyFrame KeyTime="0:0:1" Value="198"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:2" Value="198"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:3" Value="64"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:4" Value="64"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:5" Value="100"/>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames Duration="0:0:5" 
+                                               BeginTime="0:0:0.4"
+                                               Storyboard.TargetName="ghost2" 
+                                               Storyboard.TargetProperty="(Canvas.Top)" SpeedRatio="{Binding ElementName=Menu, Path=ghost2Speed}">
+					<LinearDoubleKeyFrame KeyTime="0:0:1" Value="{Binding ElementName=Menu, Path=GTop}"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:2" Value="{Binding ElementName=Menu, Path=GBottom}"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:3" Value="{Binding ElementName=Menu, Path=GBottom}"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:4" Value="{Binding ElementName=Menu, Path=GTop}"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:5" Value="{Binding ElementName=Menu, Path=GTop}"/>
+				</DoubleAnimationUsingKeyFrames>
+				<!-- ghost 3-->
+				<DoubleAnimationUsingKeyFrames Duration="0:0:5" 
+                                               BeginTime="0:0:0.8"
+                                               Storyboard.TargetName="ghost3" 
+                                               Storyboard.TargetProperty="(Canvas.Left)" SpeedRatio="{Binding ElementName=Menu, Path=ghost3Speed}">
+					<LinearDoubleKeyFrame KeyTime="0:0:1" Value="216"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:2" Value="216"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:3" Value="82"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:4" Value="82"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:5" Value="100"/>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames Duration="0:0:5" 
+                                               BeginTime="0:0:0.8"
+                                               Storyboard.TargetName="ghost3" 
+                                               Storyboard.TargetProperty="(Canvas.Top)" SpeedRatio="{Binding ElementName=Menu, Path=ghost3Speed}">
+					<LinearDoubleKeyFrame KeyTime="0:0:1" Value="{Binding ElementName=Menu, Path=GTop}"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:2" Value="{Binding ElementName=Menu, Path=GBottom}"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:3" Value="{Binding ElementName=Menu, Path=GBottom}"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:4" Value="{Binding ElementName=Menu, Path=GTop}"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:5" Value="{Binding ElementName=Menu, Path=GTop}"/>
+				</DoubleAnimationUsingKeyFrames>
+				<!-- ghost 4-->
+				<DoubleAnimationUsingKeyFrames Duration="0:0:5" 
+                                               BeginTime="0:0:1.2"
+                                               Storyboard.TargetName="ghost4" 
+                                               Storyboard.TargetProperty="(Canvas.Left)" SpeedRatio="{Binding ElementName=Menu, Path=ghost4Speed}">
+					<LinearDoubleKeyFrame KeyTime="0:0:1" Value="234"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:2" Value="234"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:3" Value="100"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:5" Value="100"/>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames Duration="0:0:5" 
+                                               BeginTime="0:0:1.2"
+                                               Storyboard.TargetName="ghost4" 
+                                               Storyboard.TargetProperty="(Canvas.Top)" SpeedRatio="{Binding ElementName=Menu, Path=ghost4Speed}">
+					<LinearDoubleKeyFrame KeyTime="0:0:1" Value="{Binding ElementName=Menu, Path=GTop}"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:2" Value="{Binding ElementName=Menu, Path=GBottom}"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:3" Value="{Binding ElementName=Menu, Path=GBottom}"/>
+					<LinearDoubleKeyFrame KeyTime="0:0:5" Value="{Binding ElementName=Menu, Path=GTop}"/>
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+		</Grid.Resources>
+				<Canvas x:Name="canvas">
+					<Canvas.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="2" ScaleY="2"/>
+							<TranslateTransform X="-40"/>
+						</TransformGroup>
+					</Canvas.RenderTransform>
+			<lcl:GhostUC GhostColor="{StaticResource ghostColor1}" x:Name="ghost1" Canvas.Left="100" Canvas.Top="{Binding ElementName=Menu, Path=GTop}"/>
+			<lcl:GhostUC GhostColor="{StaticResource ghostColor2}" x:Name="ghost2" Canvas.Left="100" Canvas.Top="{Binding ElementName=Menu, Path=GTop}">
+						<lcl:GhostUC.RenderTransform>
+							<TranslateTransform X="-18"/>
+						</lcl:GhostUC.RenderTransform>
+					</lcl:GhostUC>
+			<lcl:GhostUC GhostColor="{StaticResource ghostColor3}" x:Name="ghost3" Canvas.Left="100" Canvas.Top="{Binding ElementName=Menu, Path=GTop}">
+						<lcl:GhostUC.RenderTransform>
+							<TranslateTransform X="-36"/>
+						</lcl:GhostUC.RenderTransform>
+					</lcl:GhostUC>
+			<lcl:GhostUC GhostColor="{StaticResource ghostColor4}" x:Name="ghost4" Canvas.Left="100" Canvas.Top="{Binding ElementName=Menu, Path=GTop}">
+						<lcl:GhostUC.RenderTransform>
+							<TranslateTransform X="-54"/>
+						</lcl:GhostUC.RenderTransform>
+					</lcl:GhostUC>
+				</Canvas>
+				<StackPanel LayoutUpdated="root_LayoutUpdated" >
+					<TextBlock FontFamily="../CRACKMAN.TTF#CRACKMAN" FontSize="40" Foreground="White" Text="WELCOME" HorizontalAlignment="Center"/>
+					<UserControl x:Name="upBox" Margin="10,0,0,0" Height="52" />
+					<lcl:pageGameSetup x:Name="sets" Exit="pageGameExit" Visibility="Collapsed" />
+					<StackPanel x:Name="menu" Width="210">
+						<StackPanel Orientation="Horizontal">
+							<lcl:soundMenuBut Margin="5" text=" &lt;&lt; " Height="33" Click="PrevPlayer" />
+							<TextBox x:Name="playerNam" Width="90" VerticalAlignment="Center" TextAlignment="Center" HorizontalAlignment="Center" Background="Black" Foreground="Yellow" BorderThickness="0" FontSize="19" MaxLength="7" Text="{Binding CurrentGame.cfg.playerName, Mode=TwoWay}"/>
+
+							<lcl:soundMenuBut HorizontalAlignment="Right" Margin="5" text=" &gt;&gt; " Height="33" Click="NextPlayer" />
+						</StackPanel>
+						<lcl:soundMenuBut Margin="5" text="New training" Height="33" Click="New_Click"/>
+						<lcl:soundMenuBut Margin="5" text="Continue training" Height="35" Click="Continue_Click" IsEnabled="{Binding ElementName=Menu, Path=replayEnabled}" />
+						<lcl:soundMenuBut Margin="5" text="Show Replay" Height="35" Click="Replay_Click" IsEnabled="{Binding ElementName=Menu, Path=replayEnabled}"/>
+						<lcl:soundMenuBut x:Name="menuClose" Margin="5" text="Show scores" Height="35"/>
+						<lcl:soundMenuBut x:Name="installOffline" Margin="5" text="Install to Desktop" Height="35" Click="installOffline_Click" />
+			</StackPanel>
+
+					<TextBlock Text="Help" Foreground="White" FontFamily="CRACKMAN.TTF#CRACKMAN" />
+					<TextBlock Margin="10,0,0,0" Text="Escape : stop game" Foreground="White"/>
+					<TextBlock Margin="10,0,0,0" Text="Keys : move pacman across filled space" Foreground="White" />
+					<TextBlock Margin="10,0,0,0" Text="Arrows : move pacman across empty space" Foreground="White"/>
+					<TextBlock Margin="10,0,0,0" Text="press 'Ctrl+P': pause" Foreground="White"/>
+					<TextBlock Margin="10,0,0,0" Text="press 'Ctrl+S': activate/deactivate sound" Foreground="White"/>
+					<TextBlock Margin="10,0,0,0" Text="press 'Ctrl+F': full screen mode" Foreground="White"/>
+			<StackPanel Orientation="Horizontal">
+						<TextBlock Margin="10,0"  Text="Troubleshoot:" Foreground="White"/>
+						<HyperlinkButton Foreground="White" Content="Export CFG" Click="ExportClick" />
+						<HyperlinkButton Foreground="White" Content="Import CFG" Click="ImportClick" />
+						<HyperlinkButton Foreground="White" Content="Default CFG" Click="DefaultClick" />
+					</StackPanel>
+					<UserControl x:Name="downBox" Margin="10,0,0,0" Height="52" />
+					<TextBlock FontSize="8" Text="Based on sources from Pierrick Gourlain (November 2008)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Foreground="White" />
+					<TextBlock FontSize="10" Text="http://www.codeplex.com/geniuspacman" HorizontalAlignment="Left"  VerticalAlignment="Bottom" Foreground="White" />
+				</StackPanel>
+			</Grid>
+</UserControl>
+

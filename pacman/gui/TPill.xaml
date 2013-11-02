@@ -1,0 +1,38 @@
+﻿<UserControl CacheMode="BitmapCache" x:Class="pacman.TPill"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:lcl="clr-namespace:pacman"
+    mc:Ignorable="d"
+    d:DesignHeight="30" d:DesignWidth="30" 
+	 RenderTransformOrigin="0.5 0.5" Foreground="White" BorderBrush="Black">
+	<Grid x:Name="canvas">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="0.5*"/>
+			<RowDefinition Height="0.5*"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0.5*"/>
+			<ColumnDefinition Width="0.5*"/>
+		</Grid.ColumnDefinitions>
+		<Ellipse x:Name="ellipseGreen" Opacity="0" CacheMode="BitMapCache" Grid.RowSpan="2" Grid.ColumnSpan="2">
+			<Ellipse.Fill>
+				<RadialGradientBrush>
+					<GradientStop Offset="1"/>
+					<GradientStop Offset="0.453" Color="Green"/>
+				</RadialGradientBrush>
+			</Ellipse.Fill>
+		</Ellipse>
+		<Ellipse x:Name="ellipseRed" Opacity="0" CacheMode="BitMapCache" Grid.RowSpan="2" Grid.ColumnSpan="2">
+			<Ellipse.Fill>
+				<RadialGradientBrush>
+					<GradientStop Offset="1"/>
+					<GradientStop Offset="0.453" Color="Red"/>
+				</RadialGradientBrush>
+			</Ellipse.Fill>
+		</Ellipse>
+		<Image CacheMode="BitmapCache" x:Name="img" Grid.ColumnSpan="2" Grid.RowSpan="2" Source="/pacman;/Images/bonus_3.jpg" />
+		<lcl:Outline Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="tb" text="1" BorderBrush="{Binding Path=BorderBrush}" Foreground="{Binding Path=Foreground}" outLineSize="0.04" />
+	</Grid>
+</UserControl>

@@ -1,0 +1,64 @@
+﻿<UserControl CacheMode="BitmapCache" x:Class="pacman.GhostUC"
+    xmlns="http://schemas.microsoft.com/client/2007" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+    <Grid x:Name="LayoutRoot" >
+        <Grid.RenderTransform>
+            <TranslateTransform X="2" Y="0"/>
+        </Grid.RenderTransform>
+        <Path x:Name="ghost4" Visibility="Visible" Fill="{Binding GhostColor}" Stroke="{Binding GhostColor}">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure IsClosed="True" IsFilled="True" StartPoint="1.5,16.9996">
+                        <LineSegment Point="1.5,19.5" />
+                        <LineSegment Point="4.33,16.9996" />
+                        <LineSegment Point="5.83,19.5" />
+                        <LineSegment Point="8,16.9996" />
+                        <LineSegment Point="10,19.5" />
+                        <LineSegment Point="11.83,16.9996" />
+                        <LineSegment Point="14.5,19.5" />
+                        <LineSegment Point="14.5,16.9996" />
+                        <LineSegment Point="14.5,10"/>
+                        <ArcSegment RotationAngle="180" Point="1.5,10" IsLargeArc="true" Size="6,9"/>
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+            <!--<Path.Fill>
+                <RadialGradientBrush Center="0.5,0.5">
+                    <GradientStop Offset="0" Color="White"/>
+                    <GradientStop Offset="1" Color="Orange"/>
+                </RadialGradientBrush>
+            </Path.Fill>
+            <Path.Stroke>
+                <RadialGradientBrush Center=".5,.5">
+                    <GradientStop Offset="0" Color="White"/>
+                    <GradientStop Offset="1" Color="Orange"/>
+                </RadialGradientBrush>
+            </Path.Stroke>-->
+        </Path>
+        <Path Fill="White">
+            <Path.Data>
+                <GeometryGroup>
+                    <EllipseGeometry Center="5.5,6.5" RadiusX="1.5" RadiusY="2.5" />
+                    <EllipseGeometry Center="10.5,6.5" RadiusX="1.5" RadiusY="2.5" />
+                </GeometryGroup>
+            </Path.Data>
+        </Path>
+        <Path Fill="LightBlue">
+            <Path.Data>
+                <GeometryGroup>
+                    <EllipseGeometry Center="5.5,6.5" RadiusX="1" RadiusY="1" />
+                    <EllipseGeometry Center="10.5,6.5" RadiusX="1" RadiusY="1" />
+                </GeometryGroup>
+            </Path.Data>
+        </Path>
+        <Path Fill="Blue">
+            <Path.Data>
+                <GeometryGroup>
+                    <EllipseGeometry Center="5.5,6.5" RadiusX=".5" RadiusY=".5" />
+                    <EllipseGeometry Center="10.5,6.5" RadiusX=".5" RadiusY=".5" />
+                </GeometryGroup>
+            </Path.Data>
+        </Path>
+    </Grid>
+</UserControl>

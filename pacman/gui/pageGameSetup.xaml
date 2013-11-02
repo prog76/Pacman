@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="pacman.pageGameSetup"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+	xmlns:lcl="clr-namespace:pacman"
+    d:DesignHeight="300" d:DesignWidth="400" x:Name="gameSetup">
+	<StackPanel Width="210" >
+		<lcl:Outline text="Ghosts count" Foreground="Yellow" BorderBrush="Red" Height="33"/>
+		<Grid Height="30">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<lcl:soundMenuBut text="1" Click="ghostCountBut_Click" />
+			<lcl:soundMenuBut text="2" Click="ghostCountBut_Click" Grid.Column="1"/>
+			<lcl:soundMenuBut text="3" Click="ghostCountBut_Click" Grid.Column="2"/>
+			<lcl:soundMenuBut text="4" Click="ghostCountBut_Click" Grid.Column="3"/>
+		</Grid>
+		<lcl:Outline text="Training sets" Foreground="Yellow" BorderBrush="Red" Height="33"/>
+		<ItemsControl x:Name="setSource" ItemsSource="{Binding tskSets}">
+			<ItemsControl.ItemsPanel>
+				<ItemsPanelTemplate>
+					<StackPanel/>
+				</ItemsPanelTemplate>
+			</ItemsControl.ItemsPanel>
+			<ItemsControl.ItemTemplate>
+				<DataTemplate>
+					<lcl:menuCb Height="25" text="{Binding name}" isChecked="{Binding selected, Mode=TwoWay}" separator="{Binding separator}"  Click="tskSetClick"/>
+				</DataTemplate>
+			</ItemsControl.ItemTemplate>
+		</ItemsControl>
+		<Grid Height="33">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<lcl:soundMenuBut x:Name="start" IsEnabled="{Binding ElementName=gameSetup, Path=startEnabled}" text="Start" Click="StartClick" />
+			<lcl:soundMenuBut x:Name="butCancel" text="Cancel" Grid.Column="2"/>
+		</Grid>
+	</StackPanel>
+</UserControl>

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "active", "active\active.csproj", "{3A42F2BC-DD56-4617-AAEF-068084F84ABC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pacman", "pacman\pacman.csproj", "{63C84516-8328-45C6-925B-A0A25AADBEB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pacman.Web", "pacman.Web\pacman.Web.csproj", "{CBFE0B22-5911-4296-91AA-E2C9A6E2DDA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularGauge", "CircularGauge\CircularGauge.csproj", "{B070ACC9-AA53-40AB-8E77-880CD84F810B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeniusPacman.Silverlight.Core", "GeniusPacman.Silverlight.Core\GeniusPacman.Silverlight.Core.csproj", "{A6B3166E-55A7-4E75-BBF7-BD32762EC07B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "keyGenerator", "keyGenerator\keyGenerator.csproj", "{54CA1FF3-DC95-4363-AA2A-CED7B2A25D18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "keyboard", "keyboard\keyboard.csproj", "{5B070ECB-D998-442A-A908-336ED5890A30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A42F2BC-DD56-4617-AAEF-068084F84ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A42F2BC-DD56-4617-AAEF-068084F84ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A42F2BC-DD56-4617-AAEF-068084F84ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A42F2BC-DD56-4617-AAEF-068084F84ABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63C84516-8328-45C6-925B-A0A25AADBEB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C84516-8328-45C6-925B-A0A25AADBEB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C84516-8328-45C6-925B-A0A25AADBEB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C84516-8328-45C6-925B-A0A25AADBEB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBFE0B22-5911-4296-91AA-E2C9A6E2DDA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBFE0B22-5911-4296-91AA-E2C9A6E2DDA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBFE0B22-5911-4296-91AA-E2C9A6E2DDA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBFE0B22-5911-4296-91AA-E2C9A6E2DDA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B070ACC9-AA53-40AB-8E77-880CD84F810B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B070ACC9-AA53-40AB-8E77-880CD84F810B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B070ACC9-AA53-40AB-8E77-880CD84F810B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B070ACC9-AA53-40AB-8E77-880CD84F810B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6B3166E-55A7-4E75-BBF7-BD32762EC07B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6B3166E-55A7-4E75-BBF7-BD32762EC07B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6B3166E-55A7-4E75-BBF7-BD32762EC07B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6B3166E-55A7-4E75-BBF7-BD32762EC07B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54CA1FF3-DC95-4363-AA2A-CED7B2A25D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54CA1FF3-DC95-4363-AA2A-CED7B2A25D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54CA1FF3-DC95-4363-AA2A-CED7B2A25D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54CA1FF3-DC95-4363-AA2A-CED7B2A25D18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B070ECB-D998-442A-A908-336ED5890A30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B070ECB-D998-442A-A908-336ED5890A30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B070ECB-D998-442A-A908-336ED5890A30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B070ECB-D998-442A-A908-336ED5890A30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,31 @@
+﻿<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             x:Class="pacman.App"
+             >
+    <Application.Resources>
+        <RadialGradientBrush Center="0.5,0.5" x:Key="ghostFuite">
+            <GradientStop Offset="0" Color="Blue"/>
+            <GradientStop Offset="1" Color="Blue"/>
+        </RadialGradientBrush>
+        <RadialGradientBrush Center="0.5,0.5" x:Key="ghostEye">
+            <GradientStop Offset="0" Color="Transparent"/>
+            <GradientStop Offset="1" Color="Transparent"/>
+        </RadialGradientBrush>
+        <RadialGradientBrush Center="0.5,0.5" x:Key="ghostColor1">
+            <GradientStop Offset="0" Color="White"/>
+            <GradientStop Offset="1" Color="Orange"/>
+        </RadialGradientBrush>
+        <RadialGradientBrush Center="0.5,0.5" x:Key="ghostColor2">
+            <GradientStop Offset="0" Color="White"/>
+            <GradientStop Offset="1" Color="Pink"/>
+        </RadialGradientBrush>
+        <RadialGradientBrush Center="0.5,0.5" x:Key="ghostColor3">
+            <GradientStop Offset="0" Color="White"/>
+            <GradientStop Offset="1" Color="CadetBlue"/>
+        </RadialGradientBrush>
+        <RadialGradientBrush Center="0.5,0.5" x:Key="ghostColor4">
+            <GradientStop Offset="0" Color="White"/>
+            <GradientStop Offset="1" Color="Red"/>
+        </RadialGradientBrush>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="pacman.pacmanPic"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+	<Path Fill="Yellow" Stroke="Red" StrokeLineJoin="Round">
+		<Path.Data>
+			<PathGeometry>
+				<PathGeometry.Transform>
+					<TransformGroup>
+						<RotateTransform Angle="0" CenterX="7.5" CenterY="10" x:Name="orientationPacman"/>
+						<TranslateTransform X="2" Y="0"/>
+						<ScaleTransform ScaleX="1" ScaleY="1" />
+					</TransformGroup>
+					<!-- 
+                                binding doesn't works, on this element
+                                <RotateTransform Angle="{Binding PacmanPresenter.Orientation}" CenterX="7.5" CenterY="10" x:Name="rotatePacman"/>
+                                    
+                                -->
+				</PathGeometry.Transform>
+				<PathFigure IsFilled="True"  IsClosed="True" StartPoint="7.5,10">
+					<LineSegment x:Name="mouseTopPosition">
+						<LineSegment.Point>
+							<Point X="14.5" Y="7" />
+						</LineSegment.Point>
+					</LineSegment>
+					<ArcSegment Size="7,7" IsLargeArc="True" x:Name="mouseBottomPosition" >
+						<ArcSegment.Point>
+							<Point X="14.5" Y="13" />
+						</ArcSegment.Point>
+					</ArcSegment>
+				</PathFigure>
+			</PathGeometry>			
+		</Path.Data>
+	</Path>
+</UserControl>

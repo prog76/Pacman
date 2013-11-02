@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="pacman.SilverlightControl4"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ 	 xmlns:system="clr-namespace:System;assembly=mscorlib"
+    mc:Ignorable="d"
+	 xmlns:lcl="clr-namespace:pacman"		
+    d:DesignHeight="300" d:DesignWidth="400">
+	<UserControl.Resources>
+		<ResourceDictionary x:Key="RDArray">
+			<lcl:TXY x:Key="1">-1|-1</lcl:TXY>
+			<lcl:TXY x:Key="2">0|-1</lcl:TXY>
+			<lcl:TXY x:Key="3">1|-1</lcl:TXY>
+			<lcl:TXY x:Key="4">1|0</lcl:TXY>
+			<lcl:TXY x:Key="5">1|1</lcl:TXY>
+			<lcl:TXY x:Key="6">0|1</lcl:TXY>
+			<lcl:TXY x:Key="7">-1|1</lcl:TXY>
+			<lcl:TXY x:Key="8">-1|0</lcl:TXY>
+		</ResourceDictionary>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="white">
+		<ItemsControl ItemsSource="{Binding Source={StaticResource RDArray}}">
+			<ItemsControl.ItemsPanel>
+				<ItemsPanelTemplate>
+					<Grid/>
+				</ItemsPanelTemplate>
+			</ItemsControl.ItemsPanel>
+			<ItemsControl.ItemTemplate>
+				<DataTemplate>
+					<TextBlock Text="123" FontSize="20">
+						<TextBlock.RenderTransform>
+							<TranslateTransform X="{Binding Path=Value.x}" Y="{Binding Path=Value.y}" ></TranslateTransform>
+						</TextBlock.RenderTransform>			
+					</TextBlock>
+				</DataTemplate>
+			</ItemsControl.ItemTemplate>
+		</ItemsControl>
+		<TextBlock Text="123" FontSize="20" Foreground="White"/>
+	</Grid>
+</UserControl>
