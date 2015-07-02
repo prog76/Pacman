@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pacman", "pacman\pacman.csproj", "{63C84516-8328-45C6-925B-A0A25AADBEB6}"
 	ProjectSection(ProjectDependencies) = postProject
 		{CBFE0B22-5911-4296-91AA-E2C9A6E2DDA3} = {CBFE0B22-5911-4296-91AA-E2C9A6E2DDA3}
